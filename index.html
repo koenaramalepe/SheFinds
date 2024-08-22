@@ -10,9 +10,9 @@
 <body>
     <div class="nav" id="nav">
         <a href="#" class="active">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="courses.html">Our Services</a>
+        <a href="https://www.mukuru.com/sa/about-us/" target="_blank">About Us</a>
+        <a href="https://www.mukuru.com/sa/help-support/contact-us/" target="_blank">Contact Us</a>
+        <a href="https://www.mukuru.com/sa/services/" target="_blank">Services</a>
         
 
         <div class="registration-login">
@@ -21,16 +21,26 @@
         </div>
     </div>
 
-    <div class="" id="search-container ">
-        <form class="form" id="search-container input">
+    <div class="main">
+        <!-- <img src="background.jpg" alt="A man searching" class="background"> -->
+        <div class="background-text">
+            <h1>Mukuru</h1>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <form class="search-form">
             <input
-              type="search"
-              placeholder="Enter a country"
-              required
+              type="text"
+              placeholder="Type to search a country..."
               class="search-input"
-              id="search-input"
+              required
             />
-            <input type="submit" value="Search" class="search-container button" />
+            <button type="submit" class="search-button">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search" />
+            </button>
+            <button type="reset" class="close-button">×</button>
+        </form>
     </div>
 </body>
 </html>
