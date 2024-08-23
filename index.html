@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>SheFinds</title>
-    
+  
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="nav" id="nav">
+    <nav class="nav">
         <a href="#" class="active">Home</a>
         <a href="https://www.mukuru.com/sa/about-us/" target="_blank">About Us</a>
         <a href="https://www.mukuru.com/sa/help-support/contact-us/" target="_blank">Contact Us</a>
         <a href="https://www.mukuru.com/sa/services/" target="_blank">Services</a>
-        
-
         <div class="registration-login">
             <a href="https://www.mukuru.com/sa/sign-up-with-mukuru/" target="_blank">Sign Up</a>
             <a href="https://mobile.mukuru.com/mobi/login" target="_blank">Login</a>
         </div>
-    </div>
+    </nav>
 
     <div class="main">
-        <!-- <img src="background.jpg" alt="A man searching" class="background"> -->
         <div class="background-text">
-            <h1>"Locate Your Nearest Mukuru Cash Stop or Branch"</h1>
+       
         </div>
     </div>
 
     <div class="search-container">
-        <form class="search-form" action="" method="get">
-            <input
-              type="text"
-              name="query" 
-              placeholder="Type to search a country..."
-              class="search-input"
-              required
-            />
+        <form class="search-form" id="search-form">
+            <input type="text" class="search-input" id="country-search" placeholder="Enter country code (ZW, MW, ZM)">
             <button type="submit" class="search-button">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search" />
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search">
             </button>
-            <button type="reset" class="close-button">×</button>
         </form>
-        
     </div>
-    <script src="script.js"></script>
+
+    <div id="results-container" style="display: none;">
+        <div id="partners-list"></div>
+        <div id="cities-list" style="display: none;"></div>
+        <div id="locations-list" style="display: none;"></div>
+    </div>
+
+        <!-- Dropdown for partners -->
+        <div id="dropdown-container" style="display: none;">
+            <label for="partners-dropdown">Select a Payout Partner:</label>
+            <select id="partners-dropdown" style="width: 300px; padding: 10px; font-size: 16px;">
+                <option value="">Select a partner...</option>
+            </select>
+        </div>
+    
+        <div id="results-container" style="display: none;">
+            <div id="cities-list" style="display: none;"></div>
+            <div id="locations-list" style="display: none;"></div>
+        </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>
